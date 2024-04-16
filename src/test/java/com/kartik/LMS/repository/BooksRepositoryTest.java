@@ -32,6 +32,23 @@ class BooksRepositoryTest {
         System.out.println("Books List: " + booksList);
     }
 
+    @Test
+    public void findBookByTitle(){
+        List<Books> b = booksRepository.findByTitle("Panchatantra");
+        System.out.println("Books List: " + b);
+    }
+
+    @Test
+    public void findBookByAuthor(){
+        List<Books> b = booksRepository.findByAuthor("Nassarooddin");
+        System.out.println("Books List: " + b);
+    }
+
+    @Test
+    public void findBookByAuthorAndTitle(){
+        List<Books> b = booksRepository.findByTitleAndAuthor("Panchatantra", "Nassarooddin");
+        System.out.println("Books List: " + b);
+    }
 
 
 }
