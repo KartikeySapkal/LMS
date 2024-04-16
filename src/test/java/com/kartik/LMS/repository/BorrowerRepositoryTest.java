@@ -14,6 +14,5 @@ class BorrowerRepositoryTest {
     @Test
     public void getBorrower() {
         Borrower borrower = Borrower.builder()
-                .duedate()
     }
 }
