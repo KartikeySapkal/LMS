@@ -6,8 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Entity
 @Data
 @AllArgsConstructor
@@ -26,8 +24,8 @@ public class Borrower {
            generator = "issue_sequence"
    )
     private long issueID;
-    private LocalDate duedate;
-    private LocalDate returndate;
+    private long duedate;    //(ddmmyyyy)
+    private long returndate; //(ddmmyyyy)
 
 
 }
